@@ -11,8 +11,9 @@ function updateStorage() {
   localStorage.setItem('notes', notesContainer.innerHTML);
 }
 
+// 주석처리된 부분을 만들어준다고 생각하면 된다.
 createBtn.addEventListener('click', () => {
-  let inputBox = document.createElement('p');
+  let inputBox = document.createElement('div');
   let img = document.createElement('img');
   inputBox.className = 'input-box';
   inputBox.setAttribute('contenteditable', 'true');
@@ -24,7 +25,7 @@ notesContainer.addEventListener('click', function (e) {
   if (e.target.tagName === 'IMG') {
     e.target.parentElement.remove();
     updateStorage(); //localstorage 내용도 사라짐
-  } else if (e.target.tagName === 'P') {
+  } else if (e.target.tagName === 'DIV') {
     notes = document.querySelectorAll('.input-box');
     notes.forEach((nt) => {
       nt.onkeyup = function () {
@@ -34,10 +35,33 @@ notesContainer.addEventListener('click', function (e) {
   }
 });
 
-// 이 처리 안하면 새로고침 하면 글자가 input 박스 밖으로 튕겨나감
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter') {
-    document.execCommand('insertLineBreak');
-    event.preventDefault();
-  }
-});
+function timeStamp() {
+  const today = new Date();
+  console.log(today);
+  const years = today.getFullYear(); // 년도 가져오기
+  const months = today.getMonth() + 1; // 월 가져오기
+  const dates = today.getDate(); // 일 가져오기
+  const week = [
+    '일요일',
+    '월요일',
+    '화요일',
+    '수요일',
+    '목요일',
+    '금요일',
+    '토요일',
+  ];
+  const days = week[today.getDay()]; // 요일 가져오기
+
+  const modifyNumber = (number) => {
+    return parseInt(number) < 10 ? '0' + number : number;
+  };
+
+  const hours = modifyNumber(today.getHours()); // 변수가 변하기때문에, const로 선언하면 error 발생
+  const minutes = modifyNumber(today.getMinutes());
+  const seconds = modifyNumber(today.getSeconds());
+  console.log(
+    `${years}년 ${months}월 ${dates}일 ${days} ${hours}:${minutes}:${seconds}`
+  );
+}
+
+timeStamp();

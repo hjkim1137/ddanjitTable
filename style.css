@@ -11,7 +11,12 @@
   background: linear-gradient(135deg, #cf9aff, #95c0ff);
   color: #fff;
   padding-top: 4%;
-  padding-left: 10%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container h1 {
@@ -28,6 +33,7 @@
 
 .container h3 {
   margin-top: 15px;
+  margin-left: 2%;
 }
 
 .container button img {
@@ -52,8 +58,9 @@
 .input-box {
   position: relative;
   width: 100%;
+  min-width: 400px;
   max-width: 500px;
-  min-height: 150px;
+  min-height: 100px;
   background: #fff;
   color: #333;
   padding: 20px;
