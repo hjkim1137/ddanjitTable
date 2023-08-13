@@ -20,8 +20,7 @@ function timeStamp() {
 
   const hours = changeNumber(today.getHours());
   const minutes = changeNumber(today.getMinutes());
-  const seconds = changeNumber(today.getSeconds());
-  return `${years}년 ${months}월 ${dates}일 ${days} ${hours}:${minutes}:${seconds}`;
+  return `${years}년 ${months}월 ${dates}일 ${days} ${hours}:${minutes}`;
 }
 
 export default timeStamp;

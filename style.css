@@ -13,7 +13,7 @@
   padding-top: 4%;
 }
 
-.main-container {
+.mainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +55,7 @@
   cursor: pointer;
 }
 
-.input-box {
+.inputBox {
   position: relative;
   width: 100%;
   min-width: 400px;
@@ -63,7 +63,7 @@
   min-height: 100px;
   background: #fff;
   color: #333;
-  padding: 20px;
+  padding: 15px;
   margin: 20px 0;
   outline: solid 3px #571094;
   background-color: white;
@@ -73,7 +73,7 @@
   flex-direction: column;
 }
 
-.input-box img {
+.inputBox img {
   width: 25px;
   position: absolute;
   bottom: 15px;
@@ -81,12 +81,23 @@
   cursor: pointer;
 }
 
-.input-div {
+.inputDiv {
   flex: 1; /* 모든 사용 가능한 공간을 차지 */
 }
 
-.time-stamp {
+.timeStamp {
   color: #571094;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 14px;
+}
+
+.searchBox {
+  margin-top: 15px;
+  min-width: 400px;
+  min-height: 30px;
+  background: rgb(238, 236, 236);
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
 }

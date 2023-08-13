@@ -1,8 +1,8 @@
 import timeStamp from './timeStamp.js';
 
-const notesContainer = document.querySelector('.notes-container');
+const notesContainer = document.querySelector('.notesContainer');
 const createBtn = document.querySelector('.btn');
-let notes = document.querySelectorAll('.input-box'); // 모든 인풋 박스 선택
+let notes = document.querySelectorAll('.inputBox'); // 모든 인풋 박스 선택
 
 // 저장된 노트 로컬스토리지에서 불러오기
 function showNotes() {
@@ -21,17 +21,17 @@ createBtn.addEventListener('click', () => {
   let inputBox = document.createElement('div'); // 실제 입력창
   let img = document.createElement('img');
 
-  contentBox.className = 'input-box';
+  contentBox.className = 'inputBox';
 
   inputBox.setAttribute('contenteditable', 'true');
-  inputBox.className = 'input-div';
+  inputBox.className = 'inputDiv';
 
   img.src = 'images/delete.png';
 
   let timeBox = document.createElement('div');
   timeBox.innerHTML = timeStamp(); // timestamp 호출
   timeBox.setAttribute('contenteditable', 'false');
-  timeBox.className = 'time-stamp';
+  timeBox.className = 'timeStamp';
 
   contentBox.appendChild(inputBox);
   contentBox.appendChild(img);
@@ -48,7 +48,7 @@ notesContainer.addEventListener('click', function (e) {
       return;
     }
   } else if (e.target.tagName === 'DIV') {
-    notes = document.querySelectorAll('.input-box');
+    notes = document.querySelectorAll('.inputBox');
     notes.forEach((nt) => {
       nt.onkeyup = function () {
         updateStorage(); // 내용 로컬스토리지에 저장
