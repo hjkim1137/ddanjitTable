@@ -65,12 +65,12 @@
   color: #333;
   padding: 20px;
   margin: 20px 0;
-  outline: none;
+  outline: solid 3px #571094;
   background-color: white;
   border-radius: 5px;
 
   display: flex;
-  flex-direction: column; /* 세로로 요소 정렬 */
+  flex-direction: column;
 }
 
 .input-box img {
@@ -88,4 +88,5 @@
 .time-stamp {
   color: #571094;
   margin-top: 15px;
+  font-size: 14px;
 }

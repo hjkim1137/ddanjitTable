@@ -1,6 +1,5 @@
 function timeStamp() {
   const today = new Date();
-  // console.log(today);
   const years = today.getFullYear(); // 년도 가져오기
   const months = today.getMonth() + 1; // 월 가져오기
   const dates = today.getDate(); // 일 가져오기
@@ -15,13 +14,13 @@ function timeStamp() {
   ];
   const days = week[today.getDay()]; // 요일 가져오기
 
-  const modifyNumber = (number) => {
+  const changeNumber = (number) => {
     return parseInt(number) < 10 ? '0' + number : number;
   };
 
-  const hours = modifyNumber(today.getHours());
-  const minutes = modifyNumber(today.getMinutes());
-  const seconds = modifyNumber(today.getSeconds());
+  const hours = changeNumber(today.getHours());
+  const minutes = changeNumber(today.getMinutes());
+  const seconds = changeNumber(today.getSeconds());
   return `${years}년 ${months}월 ${dates}일 ${days} ${hours}:${minutes}:${seconds}`;
 }
 
