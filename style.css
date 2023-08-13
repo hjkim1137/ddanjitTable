@@ -55,12 +55,11 @@
   cursor: pointer;
 }
 
-.inputBox {
+.contentDiv {
   position: relative;
   width: 100%;
   min-width: 400px;
   max-width: 500px;
-  min-height: 100px;
   background: #fff;
   color: #333;
   padding: 15px;
@@ -73,7 +72,7 @@
   flex-direction: column;
 }
 
-.inputBox img {
+.contentDiv img {
   width: 25px;
   position: absolute;
   bottom: 15px;
