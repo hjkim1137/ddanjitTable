@@ -1,4 +1,4 @@
-function timeStamp() {
+export function timeStamp() {
   const today = new Date();
   const years = today.getFullYear(); // 년도 가져오기
   const months = today.getMonth() + 1; // 월 가져오기
@@ -20,7 +20,5 @@ function timeStamp() {
 
   const hours = changeNumber(today.getHours());
   const minutes = changeNumber(today.getMinutes());
-  return `${years}년 ${months}월 ${dates}일 ${days} ${hours}:${minutes}`;
+  return `최근 수정 시간: ${years}년 ${months}월 ${dates}일 ${days} ${hours}:${minutes}`;
 }
-
-export default timeStamp;

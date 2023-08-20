@@ -80,11 +80,15 @@
 }
 
 .inputDiv {
-  flex: 1; /* 모든 사용 가능한 공간을 차지 */
+  flex: 1; /*모든 사용 가능한 공간을 차지 */
+  height: 100px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 7px;
 }
 
 .timeStamp {
-  color: #571094;
+  color: #1e1a22;
   margin-top: 10px;
   font-size: 14px;
 }
@@ -108,4 +112,15 @@
   padding: 10px 0px 10px 0px;
   color: #808080;
   font-size: 11px;
+}
+
+.dropBox {
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  width: 32%;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #571094;
+  color: white;
 }
