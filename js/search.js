@@ -13,5 +13,3 @@ function filter() {
 }
 let searchInput = document.querySelector('.searchBox');
 searchInput.addEventListener('input', filter);
-
-// 마찬가지로 input으로 수정했기 때문에, innerHTML 속성은 적용되지 않는다. value 속성 사용해야 함.
