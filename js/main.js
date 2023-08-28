@@ -14,7 +14,7 @@ notesContainer.addEventListener('click', function (e) {
       return; // 그대로 반환
     }
   } else if (e.target.tagName === 'INPUT') {
-    allNotes = document.querySelectorAll('.inputDiv');
+    allNotes = document.querySelectorAll('.inputDiv, .solutionInput'); // 두 개 같이 저장 가능
     allNotes.forEach((nt) => {
       nt.onkeyup = function () {
         updateStorage(); // 내용 로컬스토리지에 저장
