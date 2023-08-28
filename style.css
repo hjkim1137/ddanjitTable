@@ -94,6 +94,7 @@
   border: 1px solid lightgray;
   border-radius: 3px;
   padding: 7px;
+  background-color: #e5edfb;
 }
 
 .timeStamp {
@@ -124,11 +125,12 @@
 }
 
 .dropBox {
+  font-size: 13px;
   text-align: center;
   border: none;
   border-radius: 20px;
-  width: 32%;
-  height: 35px;
+  width: 28%;
+  height: 26px;
   margin-top: 10px;
   background-color: #571094;
   color: white;
@@ -150,21 +152,36 @@
   color: #fff;
   margin: 4px;
   border-radius: 3px;
-  padding: 5px;
-  font-size: 14px;
+  padding: 3px;
+  font-size: 13px;
 }
 
 .causeDesc {
   background-color: rgb(226, 226, 226);
   margin: 4px;
   border-radius: 3px;
-  font-size: 12px;
-  padding: 10px;
-  min-height: 80px;
+  font-size: 11px;
+  padding: 8px;
 }
 
 .category1,
 .category2,
 .category3 {
   flex: 1;
+}
+
+.example {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.example > span {
+  margin: 5px;
+  border-radius: 7px;
+  border: none;
+  background: #e5edfb;
+  font-weight: 500;
+  padding: 5px;
 }
