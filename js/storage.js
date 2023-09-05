@@ -31,16 +31,8 @@ function saveToLocalStorage(data) {
 
 // 저장데이터 로컬스토리지에서 파싱하여 불러오기
 function parseSavedData() {
-  return (
-    JSON.parse(localStorage.getItem('allNotes')) || {
-      // 객체로 변환하여 가져옴
-      notes: [],
-      solutions: [],
-      selects: [],
-    }
-  );
+  return JSON.parse(localStorage.getItem('allNotes'));
 }
-// 저장된 데이터가 있으면 그걸 가져오고, 없으면 빈 배열 가져오기
 
 // 파싱한 데이터를 화면에 그리기
 function showNotes() {
@@ -58,6 +50,7 @@ showNotes();
 //트러블 슈팅
 // [이전]
 // for (let i = 0; i < showData.length; i++)
+
 // [이후]
 // for (let i = 0; i < showData.notes.length; i++)
 // for는 배열에 사용된다. 객체안의 배열에 접근하려면 배열인 notes에 접근해야 함.
