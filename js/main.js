@@ -25,6 +25,4 @@ notesContainer.addEventListener('click', function (e) {
       option.addEventListener('change', updateStorage);
     });
   }
-  // 'select'는 SELECT 요소의 메소드가 아님.
-  // option을 선택할 때마다 이벤트 발생시키려면 select가 아닌 change 이벤트 사용해야 함
 });
