@@ -46,11 +46,3 @@ function showNotes() {
   }
 }
 showNotes();
-
-//트러블 슈팅
-// [이전]
-// for (let i = 0; i < showData.length; i++)
-
-// [이후]
-// for (let i = 0; i < showData.notes.length; i++)
-// for는 배열에 사용된다. 객체안의 배열에 접근하려면 배열인 notes에 접근해야 함.
