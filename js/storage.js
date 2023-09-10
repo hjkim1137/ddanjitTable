@@ -35,23 +35,11 @@ function parseSavedData() {
 }
 
 // 파싱한 데이터를 화면에 그리기
-// function showNotes() {
-//   const showData = parseSavedData();
-//   console.log('showData', showData);
-//   for (let i = 0; i < showData.notes.length; i++) {
-//     const note = showData.notes[i];
-//     const solution = showData.solutions[i];
-//     const select = showData.selects[i];
-//     createNote(note, solution, select);
-//   }
-// }
-
-// 파싱한 데이터를 화면에 그리기
 function showNotes() {
   const showData = parseSavedData();
   console.log('showData', showData);
 
-  // showData가 null인 경우 처리
+  // showData가 null이 아닌 경우에만 처리
   if (showData && showData.notes) {
     for (let i = 0; i < showData.notes.length; i++) {
       const note = showData.notes[i];
@@ -60,6 +48,7 @@ function showNotes() {
       createNote(note, solution, select);
     }
   } else {
+    //showData null 이면 오류 출력
     console.error('저장된 값 없음');
   }
 }
