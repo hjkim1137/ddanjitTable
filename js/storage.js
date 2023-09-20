@@ -40,7 +40,7 @@ function showNotes() {
   console.log('showData', showData);
 
   // showData가 null이 아닌 경우에만 처리
-  if (showData && showData.notes) {
+  if (showData) {
     for (let i = 0; i < showData.notes.length; i++) {
       const note = showData.notes[i];
       const solution = showData.solutions[i];
@@ -48,8 +48,8 @@ function showNotes() {
       createNote(note, solution, select);
     }
   } else {
-    //showData null 이면 오류 출력
-    console.error('저장된 값 없음');
+    //showData null 이면 콘솔 오류 출력하고 처리 종료
+    console.error('저장된 메모 없음');
   }
 }
 

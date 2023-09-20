@@ -30,9 +30,8 @@
   margin-right: 15px;
 }
 
-.container h3 {
-  margin-top: 15px;
-  margin-left: 2%;
+.container h4 {
+  margin-top: 20px;
 }
 
 .container button img {
@@ -157,7 +156,11 @@
 }
 
 .causeDesc {
+  text-align: center;
   background-color: rgb(226, 226, 226);
+  height: 60px;
+  display: flex;
+  align-items: center;
   margin: 4px;
   border-radius: 3px;
   font-size: 11px;
@@ -184,4 +187,21 @@
   background: #e5edfb;
   font-weight: 500;
   padding: 5px;
+}
+
+.mainDesc {
+  width: 400px;
+  margin-top: 15px;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 12px;
+  outline: solid 2px #571094;
+  background-color: #fff;
+  color: #571094;
+  font-weight: 500;
+  align-items: center;
+}
+
+.mainDesc span {
+  font-weight: 800;
 }
