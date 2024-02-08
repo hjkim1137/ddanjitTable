@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
   width: 100%;
-  background: linear-gradient(135deg, #cf9aff, #95c0ff);
-  color: #fff;
+  background: transparent;
+  color: #121212;
   padding: 3% 0% 3% 0%;
 }
 
@@ -16,6 +15,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.mainContainer > button {
+  justify-content: center;
 }
 
 .container h1 {
@@ -40,17 +43,18 @@
 }
 
 .container button {
+  width: 400px;
   display: flex;
   align-items: center;
-  background: linear-gradient(#9418fd, #571094);
-  color: #fff;
-  font-size: 16px;
   outline: 0;
-  border: 0;
-  border-radius: 40px;
-  padding: 15px 25px;
-  margin: 30px 0 20px;
+  border: 1px solid #a2a2a2;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 8px;
   cursor: pointer;
+}
+.container button:hover {
+  font-weight: 700;
 }
 
 .contentDiv {
@@ -58,11 +62,11 @@
   width: 100%;
   min-width: 400px;
   max-width: 500px;
+  border: 1px solid #a2a2a2;
   background: #fff;
   color: #333;
   padding: 15px;
   margin: 20px 0;
-  outline: solid 3px #571094;
   background-color: white;
   border-radius: 5px;
 
@@ -81,7 +85,7 @@
 .inputDiv {
   flex: 1;
   height: 100px;
-  border: 1px solid lightgray;
+  border: 1px solid #a2a2a2;
   border-radius: 3px;
   padding: 7px;
 }
@@ -90,7 +94,7 @@
   flex: 1;
   margin-top: 5px;
   height: 100px;
-  border: 1px solid lightgray;
+  border: 1px solid #a2a2a2;
   border-radius: 3px;
   padding: 7px;
   background-color: #e5edfb;
@@ -106,11 +110,9 @@
   margin-top: 15px;
   min-width: 400px;
   min-height: 30px;
-  background: rgb(238, 236, 236);
   color: #333;
   padding: 10px;
-  border-radius: 5px;
-  outline: none;
+  border: 1px solid #a2a2a2;
 }
 
 .footer {
@@ -131,7 +133,7 @@
   width: 28%;
   height: 26px;
   margin-top: 10px;
-  background-color: #571094;
+  background: #dbdbdb;
   color: white;
 }
 
@@ -141,14 +143,13 @@
   background: #fff;
   color: #333;
   padding: 7px;
+  border: 1px solid #a2a2a2;
   border-radius: 5px;
-  outline: solid 3px #571094;
 }
 
 .causeType {
+  border: 1px solid #a2a2a2;
   text-align: center;
-  background-color: #571094;
-  color: #fff;
   margin: 4px;
   border-radius: 3px;
   padding: 3px;
@@ -157,7 +158,7 @@
 
 .causeDesc {
   text-align: center;
-  background-color: rgb(226, 226, 226);
+  background-color: #dbdbdb;
   height: 60px;
   display: flex;
   align-items: center;
@@ -191,13 +192,11 @@
 
 .mainDesc {
   width: 400px;
+  border: 1px solid #a2a2a2;
   margin-top: 15px;
   font-size: 12px;
   border-radius: 5px;
   padding: 12px;
-  outline: solid 2px #571094;
-  background-color: #fff;
-  color: #571094;
   font-weight: 500;
   align-items: center;
 }
