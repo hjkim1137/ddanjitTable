@@ -26,3 +26,10 @@ notesContainer.addEventListener('click', function (e) {
     });
   }
 });
+
+// info 버튼 누르면 정보 팝업
+let infoBtn = document.querySelector('.serviceInfo');
+let detailInfo = document.querySelector('.mainDesc');
+infoBtn.addEventListener('click', () => {
+  detailInfo.classList.toggle('show');
+});

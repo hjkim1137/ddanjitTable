@@ -2,13 +2,48 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+a:hover {
+  font-weight: 700;
 }
 
 .container {
   width: 100%;
   background: transparent;
   color: #121212;
-  padding: 3% 0% 3% 0%;
+}
+.titleBox {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: #efefef;
+  padding: 8px 10px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.serviceInfo {
+  color: #121212;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 8px;
+  padding: 4px;
+  border-radius: 3px;
+}
+.loginRegister {
+  gap: 8px;
+  display: flex;
+  flex-grow: 1;
+  cursor: pointer;
+  justify-content: end;
 }
 
 .mainContainer {
@@ -97,12 +132,11 @@
   border: 1px solid #a2a2a2;
   border-radius: 3px;
   padding: 7px;
-  background-color: #e5edfb;
 }
 
 .timeStamp {
   color: #1e1a22;
-  margin-top: 10px;
+  margin-top: 18px;
   font-size: 14px;
 }
 
@@ -129,15 +163,17 @@
   font-size: 13px;
   text-align: center;
   border: none;
-  border-radius: 20px;
-  width: 28%;
+  border-radius: 5px;
+  padding: 4px 8px;
   height: 26px;
   margin-top: 10px;
-  background: #dbdbdb;
+  background: #121212;
   color: white;
 }
 
 .category {
+  margin: 0 auto;
+  margin-top: 16px;
   display: flex;
   max-width: 400px;
   background: #fff;
@@ -185,22 +221,27 @@
   margin: 5px;
   border-radius: 7px;
   border: none;
-  background: #e5edfb;
+  background: #121212;
+  color: #fff;
   font-weight: 500;
   padding: 5px;
 }
 
 .mainDesc {
-  width: 400px;
-  border: 1px solid #a2a2a2;
-  margin-top: 15px;
+  background-color: #efefef;
+  border-bottom: 1px solid #efefef;
+  align-items: center;
+  width: 100%;
+  display: none;
   font-size: 12px;
-  border-radius: 5px;
+  border-radius: 0 0 18px 18px;
   padding: 12px;
   font-weight: 500;
-  align-items: center;
 }
-
-.mainDesc span {
-  font-weight: 800;
+.show {
+  display: block;
+}
+.desc {
+  width: 400px;
+  margin: 0 auto;
 }
