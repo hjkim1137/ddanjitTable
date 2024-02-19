@@ -141,7 +141,7 @@ a:hover {
 }
 
 .searchBox {
-  margin-top: 15px;
+  margin: 15px 0;
   min-width: 400px;
   min-height: 30px;
   color: #333;
